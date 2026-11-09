@@ -33,3 +33,6 @@ Do not upload files containing passwords, tokens, or other credentials. The orig
 
 shakir § bilal
 
+
+# ARS110-RestConf-Grupp17
+RESTConf-projekt ARS110 HT26 — Shakir &amp; Billo, skill: lwb310 omSkillsExam

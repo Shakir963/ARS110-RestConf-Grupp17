@@ -1,0 +1,936 @@
+{
+  "info": {
+    "_postman_id": "bdac0d6e-5126-4f0b-8218-cffff536a40c",
+    "name": "ARS110-SKILL KONF",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58247269",
+    "_collection_link": "https://go.postman.co/collection/58247269-bdac0d6e-5126-4f0b-8218-cffff536a40c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "1. R1 - Subinterface VLAN 5",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"0/0/0.5\",\r\n        \"encapsulation\": {\r\n          \"dot1Q\": {\r\n            \"vlan-id\": 5\r\n          }\r\n        },\r\n        \"ip\": {\r\n          \"address\": {\r\n            \"primary\": {\r\n              \"address\": \"10.0.5.1\",\r\n              \"mask\": \"255.255.255.0\"\r\n            }\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.1/restconf/data/Cisco-IOS-XE-native:native/interface/",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "1"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "R1 - Subinterface VLAN 6",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"0/0/0.6\",\r\n        \"encapsulation\": {\r\n          \"dot1Q\": {\r\n            \"vlan-id\": 6\r\n          }\r\n        },\r\n        \"ip\": {\r\n          \"address\": {\r\n            \"primary\": {\r\n              \"address\": \"10.0.6.1\",\r\n              \"mask\": \"255.255.255.0\"\r\n            }\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.1/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "1"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "R1 - Subinterface VLAN 1",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"0/0/0.1\",\r\n        \"encapsulation\": {\r\n          \"dot1Q\": {\r\n            \"vlan-id\": 1\r\n          }\r\n        },\r\n        \"ip\": {\r\n          \"address\": {\r\n            \"primary\": {\r\n              \"address\": \"10.0.1.1\",\r\n              \"mask\": \"255.255.255.0\"\r\n            }\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.1/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "1"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "R2 - Fysisk port VLAN 5",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"0/0/0\",\r\n        \"ip\": {\r\n          \"address\": {\r\n            \"primary\": {\r\n              \"address\": \"10.0.5.2\",\r\n              \"mask\": \"255.255.255.0\"\r\n            }\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.2/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "2"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "R3 - Fysisk port VLAN 6",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"0/0/0\",\r\n        \"ip\": {\r\n          \"address\": {\r\n            \"primary\": {\r\n              \"address\": \"10.0.6.3\",\r\n              \"mask\": \"255.255.255.0\"\r\n            }\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.3/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "3"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Switch29 (VLAN 1 IP)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"Vlan\": [\r\n      {\r\n        \"name\": 1,\r\n        \"ip\": {\r\n          \"address\": {\r\n            \"primary\": {\r\n              \"address\": \"10.0.1.11\",\r\n              \"mask\": \"255.255.255.0\"\r\n            }\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.4/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "4"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "S29-port1-trunk",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"1/0/1\",\r\n        \"switchport\": {\r\n          \"Cisco-IOS-XE-switch:mode\": {\r\n            \"trunk\": {}\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.4/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "4"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "S29-port3-trunk",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"1/0/3\",\r\n        \"switchport\": {\r\n          \"Cisco-IOS-XE-switch:mode\": {\r\n            \"trunk\": {}\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.4/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "4"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "S29-port4-trunk",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"1/0/4\",\r\n        \"switchport\": {\r\n          \"Cisco-IOS-XE-switch:mode\": {\r\n            \"trunk\": {}\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.4/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "4"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "S50-port1-trunk",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"1/0/1\",\r\n        \"switchport\": {\r\n          \"Cisco-IOS-XE-switch:mode\": {\r\n            \"trunk\": {}\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.5/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "5"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "S50-port2-trunk",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"1/0/2\",\r\n        \"switchport\": {\r\n          \"Cisco-IOS-XE-switch:mode\": {\r\n            \"trunk\": {}\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.5/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "5"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "S60-port2-trunk",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"1/0/2\",\r\n        \"switchport\": {\r\n          \"Cisco-IOS-XE-switch:mode\": {\r\n            \"trunk\": {}\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.6/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "6"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "S60-port3-trunk",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"1/0/3\",\r\n        \"switchport\": {\r\n          \"Cisco-IOS-XE-switch:mode\": {\r\n            \"trunk\": {}\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.6/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "6"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Switch50 (VLAN 1 IP)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"Vlan\": [\r\n      {\r\n        \"name\": 1,\r\n        \"ip\": {\r\n          \"address\": {\r\n            \"primary\": {\r\n              \"address\": \"10.0.1.12\",\r\n              \"mask\": \"255.255.255.0\"\r\n            }\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.5/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "5"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Switch60 (VLAN 1 IP)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"Vlan\": [\r\n      {\r\n        \"name\": 1,\r\n        \"ip\": {\r\n          \"address\": {\r\n            \"primary\": {\r\n              \"address\": \"10.0.1.13\",\r\n              \"mask\": \"255.255.255.0\"\r\n            }\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.6/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "6"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Switch50 – Till R2",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"1/0/5\",\r\n        \"switchport\": {\r\n          \"Cisco-IOS-XE-switch:access\": {\r\n            \"vlan\": {\r\n              \"vlan\": 5\r\n            }\r\n          },\r\n          \"Cisco-IOS-XE-switch:mode\": {\r\n            \"access\": {}\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.5/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "5"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Switch60 – Till PC",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"1/0/4\",\r\n        \"switchport\": {\r\n          \"Cisco-IOS-XE-switch:access\": {\r\n            \"vlan\": {\r\n              \"vlan\": 6\r\n            }\r\n          },\r\n          \"Cisco-IOS-XE-switch:mode\": {\r\n            \"access\": {}\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.6/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "6"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Switch60 – Till R3",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:interface\": {\r\n    \"GigabitEthernet\": [\r\n      {\r\n        \"name\": \"1/0/6\",\r\n        \"switchport\": {\r\n          \"Cisco-IOS-XE-switch:access\": {\r\n            \"vlan\": {\r\n              \"vlan\": 6\r\n            }\r\n          },\r\n          \"Cisco-IOS-XE-switch:mode\": {\r\n            \"access\": {}\r\n          }\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.6/restconf/data/Cisco-IOS-XE-native:native/interface",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "6"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "interface"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Switch29-VLAN-skapande",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"Cisco-IOS-XE-native:vlan\": {\r\n    \"Cisco-IOS-XE-vlan:vlan-list\": [\r\n      { \"id\": 5, \"name\": \"VLAN_5\" },\r\n      { \"id\": 6, \"name\": \"VLAN_6\" }\r\n    ]\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.4/restconf/data/Cisco-IOS-XE-native:native/vlan",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "4"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "vlan"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Switch29-VTP",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"Cisco-IOS-XE-native:vtp\": {\n    \"Cisco-IOS-XE-vtp:mode\": {\n      \"server\": {}\n    }\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.4/restconf/data/Cisco-IOS-XE-native:native/vtp",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "4"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "vtp"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Switch50-VTP client",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"Cisco-IOS-XE-native:vtp\": {\n    \"Cisco-IOS-XE-vtp:mode\": {\n      \"client\": {}\n    }\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.5/restconf/data/Cisco-IOS-XE-native:native/vtp",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "5"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "vtp"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Switch60-VTP clinet",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/yang-data+json"
+          },
+          {
+            "key": "Accept",
+            "value": "application/yang-data+json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"Cisco-IOS-XE-native:vtp\": {\n    \"Cisco-IOS-XE-vtp:mode\": {\n      \"client\": {}\n    }\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://192.168.1.6/restconf/data/Cisco-IOS-XE-native:native/vtp",
+          "protocol": "https",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "6"
+          ],
+          "path": [
+            "restconf",
+            "data",
+            "Cisco-IOS-XE-native:native",
+            "vtp"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
